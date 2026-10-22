@@ -1,0 +1,99 @@
+{
+  "manifest_version": 3,
+  "name": "Zamzam Capital Shariah Checker — Broker & Trendlyne Edition",
+  "version": "1.2.0",
+  "description": "Live Shariah compliance for Broker Terminals, Trendlyne, and TradingView with order-ticket alerts and watchlist/screener badges.",
+  "permissions": [
+    "storage",
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://*.zerodha.com/*",
+    "https://*.groww.in/*",
+    "https://*.dhan.co/*",
+    "https://*.upstox.com/*",
+    "https://*.fyers.in/*",
+    "https://*.angelone.in/*",
+    "https://*.angelbroking.com/*",
+    "https://*.icicidirect.com/*",
+    "https://*.kotaksecurities.com/*",
+    "https://*.hdfcsec.com/*",
+    "https://*.hdfcsky.com/*",
+    "https://*.sbisecurities.in/*",
+    "https://*.sharekhan.com/*",
+    "https://*.mstock.com/*",
+    "https://*.shoonya.com/*",
+    "https://*.aliceblueonline.com/*",
+    "https://*.5paisa.com/*",
+    "https://*.motilaloswal.com/*",
+    "https://*.paytmmoney.com/*",
+    "https://*.indmoney.com/*",
+    "https://*.sensibull.com/*",
+    "https://*.smallcase.com/*",
+    "https://*.interactivebrokers.com/*",
+    "https://*.robinhood.com/*",
+    "https://*.webull.com/*",
+    "https://trendlyne.com/*",
+    "https://*.trendlyne.com/*",
+    "https://*.screener.in/*",
+    "https://*.tickertape.in/*",
+    "https://*.chartink.com/*",
+    "https://*.tradingview.com/*",
+    "https://screener.zamzam-capital.com/*",
+    "https://*.zamzam-capital.com/*",
+    "https://*.workers.dev/*",
+    "https://excell-final-worker.saif-ace.workers.dev/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.zerodha.com/*",
+        "https://*.groww.in/*",
+        "https://*.dhan.co/*",
+        "https://*.upstox.com/*",
+        "https://*.fyers.in/*",
+        "https://*.angelone.in/*",
+        "https://*.angelbroking.com/*",
+        "https://*.icicidirect.com/*",
+        "https://*.kotaksecurities.com/*",
+        "https://*.hdfcsec.com/*",
+        "https://*.hdfcsky.com/*",
+        "https://*.sbisecurities.in/*",
+        "https://*.sharekhan.com/*",
+        "https://*.mstock.com/*",
+        "https://*.shoonya.com/*",
+        "https://*.aliceblueonline.com/*",
+        "https://*.5paisa.com/*",
+        "https://*.motilaloswal.com/*",
+        "https://*.paytmmoney.com/*",
+        "https://*.indmoney.com/*",
+        "https://*.sensibull.com/*",
+        "https://*.smallcase.com/*",
+        "https://*.interactivebrokers.com/*",
+        "https://*.robinhood.com/*",
+        "https://*.webull.com/*",
+        "https://trendlyne.com/*",
+        "https://*.trendlyne.com/*",
+        "https://*.screener.in/*",
+        "https://*.tickertape.in/*",
+        "https://*.chartink.com/*",
+        "https://*.tradingview.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_title": "Zamzam Capital Shariah Checker",
+    "default_popup": "popup.html"
+  }
+}

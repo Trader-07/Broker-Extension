@@ -1,0 +1,14 @@
+/* Multi-Stock Portfolio & Table Audit UI */
+#zamzam-capital-shariah-panel .sc-multi-section{margin-top:12px;border-top:1px solid #214638;padding-top:10px}
+#zamzam-capital-shariah-panel .sc-multi-title{font-size:9px;letter-spacing:1.1px;color:#8eafa0;font-weight:700;margin-bottom:6px}
+#zamzam-capital-shariah-panel .sc-multi-list{max-height:130px;overflow-y:auto;display:flex;flex-direction:column;gap:4px}
+#zamzam-capital-shariah-panel .sc-multi-item{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;background:#0c2920;border:1px solid #204638;border-radius:6px;font-size:11px;cursor:pointer}
+#zamzam-capital-shariah-panel .sc-multi-item:hover{border-color:#d8b45b}
+.sc-mini-badge{padding:2px 5px;border-radius:4px;font-size:9px;font-weight:700}
+.sc-mini-good{background:#0b3d2b;color:#51e39a;border:1px solid #1c7651}
+.sc-mini-bad{background:#421d23;color:#ff7b82;border:1px solid #853a43}
+.sc-mini-unk{background:#39331d;color:#d9c58b}
+.sc-wl-badge{display:inline-block;padding:2px 6px;border-radius:4px;font-size:9px;font-weight:800;margin-right:6px;vertical-align:middle}
+.sc-wl-good{background:#0b3d2b;color:#51e39a;border:1px solid #1c7651}
+.sc-wl-bad{background:#421d23;color:#ff7b82;border:1px solid #853a43}
+.sc-wl-unk{background:#39331d;color:#d9c58b}
